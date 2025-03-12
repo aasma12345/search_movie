@@ -1,0 +1,96 @@
+
+body {
+  background-color: black !important;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.data-title,
+.data-year,
+.data-rating,
+.data-released,
+.data-actors,
+.data-language,
+.data-genre {
+  color: white;
+  margin: 0;
+}
+
+.movies {
+  border: 2px solid black; 
+  padding: 15px;
+  border-radius: 10px; 
+  background-color: #222; 
+  text-align: center;
+  color: white;
+  width: 400px; 
+  margin: 20px auto;
+}
+
+.data-img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.data-title,
+.data-year,
+.data-rating,
+.data-plot {
+  color: white;
+  margin: 10px 0;
+}
+
+.data-plot {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+/* .button {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: fit-content;
+} */
+
+
+.rawd {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  border: 1px solid white;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+}
+
+/* .columnd {
+  width: 400px;
+  height: 400px;
+  border: white ;
+} */
+
+.data-imge {
+  width: 100%;
+  height: 400px;
+}
+.d{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #222;;
+}
+.h4{
+  color: white;
+}
