@@ -41,6 +41,13 @@ const MovieDetails = () => {
   );
 };
 
-export default MovieDetails;
+const MovieDetailcontent = () => (
+  <Suspense fallback={<h2>Loading...</h2>}>
+    <MovieDetails />
+  </Suspense>
+);
+
+export default MovieDetailcontent;
+// export default MovieDetails;
 
 
