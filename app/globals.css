@@ -22,7 +22,7 @@ body {
 }
 
 .movies {
-  border: 2px solid white; 
+  border: 2px solid black; 
   padding: 15px;
   border-radius: 10px; 
   background-color: #222; 
@@ -87,7 +87,7 @@ body {
   height: 400px;
 }
 .d{
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 10px;
   background-color: #222;;
 }
