@@ -11,10 +11,10 @@ const Page = () => {
   const [movies, setMovies] = useState(list); 
   return (
     <div>
-      <Search setMovies={setMovies} />
-      <Container movies={movies}/>
+        <Search setMovies={setMovies} />
+        <Container movies={movies}/>
     </div>
-  );
+   );
 };
 
 export default Page;

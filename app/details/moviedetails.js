@@ -1,9 +1,10 @@
 
 "use client";
-import React, { useEffect, useState, Suspense  } from "react";
-import { useSearchParams } from "next/navigation";
+import React, { useEffect, useState, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Rating from "../rating.js";
 const MovieDetails = () => {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const imdbID = searchParams.get("imdbID");
   const [movie, setMovie] = useState(null);
@@ -35,6 +36,9 @@ const MovieDetails = () => {
                 <p className="data-language">Language: {movie.Language}</p>
                 <p className="data-genre">Genre: {movie.Genre }</p>
                 <Rating movieId={imdbID} />
+                <button onClick={() => router.back()} className="back-button">
+                  Go Back
+                </button>
           </div>
       </div>
     </div>
@@ -48,6 +52,6 @@ const MovieDetailcontent = () => (
 );
 
 export default MovieDetailcontent;
-// export default MovieDetails;
+
 
 

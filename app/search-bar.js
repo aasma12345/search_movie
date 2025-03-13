@@ -9,7 +9,7 @@ const Search = ({ setMovies }) => {
     setInput(value);
   }
   const handleSearch = () => {
-    if (input === "") return;
+    if (input.trim() === "") return;
 
     fetch(`https://www.omdbapi.com/?s=${input}&apikey=c6c606f6`)
       .then((response) => response.json())
